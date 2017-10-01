@@ -1,0 +1,294 @@
+@import "../libs/magnific-popup/dist/magnific-popup.css"
+@import "setting"
+@import "fonts"
+@import "libs"
+
+body
+	margin: 0
+	padding: 0
+	color: #ffffff
+
+.top_header
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	height: 110px
+	background-color: #000
+
+	nav
+		flex-basis: 7%
+		align-self: center
+		margin-left: 50px
+
+	nav > ul
+		flex-basis: 10%
+		display: flex
+		background-color: transparent
+
+		li > ul
+			border-radius: 5px
+			overflow: hidden
+		li ul
+			position: absolute
+			display: none
+			z-index: 5
+		li:hover > ul
+			display: block
+			background-color: #adadc2
+
+		ul > li > a
+			text-align: center
+			color: #000
+		ul li a
+			display: block
+		li > ul li a
+			padding: 10px
+			background: #70709e
+			border-bottom: 1px solid #666
+			transition: 0.5s all
+			color: #fff
+			text-align: center
+			text-decoration: none
+			text-transform: uppercase
+		li > ul li a:hover
+			text-decoration: underline
+			background-color: #8e8eb1
+			padding: 10px 0 10px 20px
+
+	.logo
+		flex-basis: 20%
+		flex-grow: 2
+		align-self: center
+		font-size: 50px
+		font-family: "Montserrat-Bold", sans-serif
+		text-transform: uppercase
+		color: #ffffff
+
+	.tel, .mail
+		flex-basis: 20%
+		align-self: center
+		i
+			margin-right: 10px
+		a
+			font-size: 18px
+			color: #fff
+			&:focus, &:hover
+				color: #fff
+
+	.social
+		flex-basis: 10%
+		display: flex
+		flex-direction: column
+		align-self: center
+		justify-content: space-around
+		i
+			font-size: 24px
+
+.header_carousel
+	background-color: #70709e
+	.carousel-indicators
+		li
+			width: 20px
+	.item
+		width: 100%
+		height: auto
+		background-size: cover
+
+.bottom_header
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	height: 200px
+	background-color: #000
+	.item_h
+		flex-basis: 12%
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		flex-direction: column
+		border: 1px solid white
+		margin-top: 10px
+		margin-bottom: 10px
+		h3, p
+			margin: 0 auto
+			text-transform: capitalize
+			color: #ffffff
+		h3
+			font-size: 40px
+		p
+			font-size: 18px
+
+/////////////////////////////////////    	services      ////////////////////////////////////////////
+#services
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	text-align: center
+	padding: 20px 100px 80px
+	background-color: #f0f0f2
+
+.desc_services
+	p
+		font-size: 20px
+		margin-top: 20px
+		background-color: #f5f5f6
+
+.wrap_services
+	margin-top: 50px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 80%
+
+	.active
+		background-color: #e7f3fb
+		i, p
+			color: black
+
+.item_services
+	flex-basis: 25%
+	display: flex
+	justify-content: center
+	flex-direction: column
+	width: 160px
+	height: 160px
+	background-color: #ffe1e5
+	text-decoration: none
+	&:focus,
+	&:hover
+		text-decoration: none
+		list-style: none
+		background-color: #e7f3fb
+		i, p
+			color: #000
+
+	i
+		font-size: 48px
+	p
+		padding-top: 12px
+		text-transform: capitalize
+		color: #ffffff
+
+////////////////////////////////////////   last_project    ///////////////////////////////////////////////////
+
+#last_project
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	text-align: center
+	color: #fff
+	background-color: #000
+	padding: 30px 40px
+
+.desc_proj
+	flex-basis: 100%
+	h1
+		text-transform: uppercase
+	p
+		margin: 30px
+		text-transform: uppercase
+		span
+			color: #3498db
+
+.item_proj
+	flex-basis: 23%
+	height: 280px
+	width: 280px
+	background-color: #fff
+	margin: 15px
+
+////////////////////////////////////////   latest_blog    ///////////////////////////////////////////////////
+
+#last_blog
+	color: #fff
+	background-color: #2c3e6a
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	text-align: center
+	padding: 30px 70px 80px
+
+	.desc_blog
+		flex-basis: 85%
+		h1
+			text-transform: uppercase
+		p
+			font-size: 20px
+	.responsive
+		flex-basis: 90%
+		height: 250px
+		margin: 0 auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		overflow: hidden
+		.item_res
+			flex-basis: 20%
+			display: flex
+			flex-wrap: wrap
+			height: 240px
+			width: 240px
+			background-color: #ebebf2
+			border-radius: 10px
+			margin: 10px
+			text-align: center
+			color: #000
+			.desc_res
+				align-self: flex-end
+				margin: 0 auto
+///////////////////////////////////////////////////   footer   ///////////////////////////////////////////////////////
+footer
+	padding: 40px 150px 50px
+	background-color: #000
+	color: #fff
+	address
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 0
+		.get_touch, .twitter, .about
+			flex-basis: 22%
+			text-align: left
+			h3
+				text-transform: uppercase
+			p
+				margin-top: 30px
+				font-size: 18px
+			a
+				color: #fff
+				text-decoration: none
+				&:hover
+					color: #fff
+	#map
+		display: flex
+		justify-content: center
+		margin-top: 30px
+		height: 400px
+		width: 100%
+
+.copyrigth
+	height: 100px
+	width: 100%
+	background-color: #111111
+	p
+		color: #fff
+		text-transform: uppercase
+		vertical-align: middle
+		padding: 40px 150px 0
+
+@import "media"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
